@@ -1,33 +1,147 @@
-/* style.css - Churn & Chill Theme */
 body {
   font-family: 'Poppins', sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
-/* Teal Accent Color */
-.navbar-brand span, 
-.heading_container h2,
-.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
-.info_section .info_contact .link-box {
-  color: #3EB489 !important;
+.layout_padding {
+  padding: 90px 0;
 }
 
-/* Mint Green Backgrounds */
-.sub_page .header_section,
-.about_section,
+/* Heading Highlights - Updated to Mint Green */
+.navbar-brand span {
+  color: #2E8B57; /* Deep Mint/Forest Green */
+}
+
+/* Header Section */
+.sub_page .header_section {
+  background-color: #98FF98; /* Main Mint Green */
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link {
+  color: #2E8B57;
+}
+
+.custom_nav-container .nav_search-btn:hover {
+  color: #2E8B57;
+}
+
+/* Navigation Toggler - Mint Aesthetic */
+.custom_nav-container .navbar-toggler span,
+.custom_nav-container .navbar-toggler span::before,
+.custom_nav-container .navbar-toggler span::after {
+  background-color: #ffffff;
+}
+
+/* Slider/Hero Button - Deep Green */
+.slider_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #2E8B57;
+  color: #ffffff;
+  border-radius: 0;
+  transition: all .3s;
+  border: 1px solid #2E8B57;
+}
+
+.slider_section .detail-box a:hover {
+  background-color: transparent;
+  color: #2E8B57;
+}
+
+/* Product Section Circles - Soft Mint & Sage */
 .product_section .box .img-box::before {
-  background-color: #98FF98 !important;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background-color: #98FF98; /* Mint */
+  border: 15px solid #E0FFF0; /* Soft Sage */
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
-/* Buttons & Footer */
-.btn-box a, .footer_section, .slider_section .detail-box a {
-  background-color: #3EB489 !important;
-  border: 1px solid #3EB489 !important;
-  color: #ffffff !important;
+.product_section .btn-box a {
+  background-color: #2E8B57;
+  border: 1px solid #2E8B57;
+  color: #ffffff;
 }
 
-.btn-box a:hover {
-  background-color: transparent !important;
-  color: #3EB489 !important;
+.product_section .btn-box a:hover {
+  background-color: transparent;
+  color: #2E8B57;
+}
+
+.product_section .owl-dots .owl-dot.active {
+  background: #2E8B57;
+}
+
+/* About Section Backgrounds - Mint Gradient */
+.about_section {
+  background: linear-gradient(to right, #98FF98 50%, transparent 50%);
+}
+
+.about_section .detail-box a {
+  background-color: #2E8B57;
+  border: 1px solid #2E8B57;
+}
+
+.about_section .detail-box a:hover {
+  background-color: transparent;
+  color: #2E8B57;
+}
+
+.about_section2 {
+  background: linear-gradient(to right, transparent 50%, #E0FFF0 50%);
+}
+
+/* Contact Section - Mint Theme */
+.contact_section {
+  background: linear-gradient(to right, #98FF98 50%, transparent 50%);
+  color: #0c0c0c;
+}
+
+.contact_section .form_container button {
+  background-color: #2E8B57;
+  border: 1px solid #2E8B57;
+}
+
+/* Info & Footer Section Icons */
+.info_section .info_contact .link-box {
+  color: #2E8B57;
+}
+
+.info_section .info_contact .link-box i {
+  border: 1px solid #2E8B57;
+}
+
+.info_section .info_contact .link-box:hover i {
+  color: #98FF98;
+}
+
+.info_section .social-box a {
+  border: 1px solid #2E8B57;
+  color: #2E8B57;
+}
+
+.info_section .social-box a:hover {
+  color: #98FF98;
+}
+
+/* Keeping standard properties from reference */
+.heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero_area {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
