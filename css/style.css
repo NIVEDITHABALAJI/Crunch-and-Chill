@@ -1,0 +1,33 @@
+/* style.css - Churn & Chill Theme */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+}
+
+/* Teal Accent Color */
+.navbar-brand span, 
+.heading_container h2,
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.info_section .info_contact .link-box {
+  color: #3EB489 !important;
+}
+
+/* Mint Green Backgrounds */
+.sub_page .header_section,
+.about_section,
+.product_section .box .img-box::before {
+  background-color: #98FF98 !important;
+}
+
+/* Buttons & Footer */
+.btn-box a, .footer_section, .slider_section .detail-box a {
+  background-color: #3EB489 !important;
+  border: 1px solid #3EB489 !important;
+  color: #ffffff !important;
+}
+
+.btn-box a:hover {
+  background-color: transparent !important;
+  color: #3EB489 !important;
+}
