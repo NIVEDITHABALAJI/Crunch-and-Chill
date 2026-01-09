@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+  .about_section {
+    background: linear-gradient(to bottom, #98FF98 50%, transparent 50%);
+  }
+  .contact_section {
+    background: linear-gradient(to bottom, #98FF98 625px, transparent 625px);
+  }
+}
